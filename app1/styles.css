@@ -641,3 +641,328 @@ body {
         font-size: 2.5rem;
     }
 }
+
+/* ================================ */
+/* 11. About Page */
+/* ================================ */
+.about {
+    padding-top: 80px;
+}
+
+.about__hero {
+    height: 400px;
+    background-color: #34c759;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.about__hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.about__hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.about__content {
+    padding: 80px 100px;
+}
+
+.about__mission {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.about__mission h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about__mission p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.about__values {
+    margin-top: 60px;
+}
+
+.about__values h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.about__values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.about__value-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about__value-card:hover {
+    transform: translateY(-10px);
+}
+
+.about__value-card i {
+    font-size: 2.5rem;
+    color: #34c759;
+    margin-bottom: 20px;
+}
+
+.about__value-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about__value-card p {
+    color: #666;
+}
+
+/* ================================ */
+/* 12. Contact Page */
+/* ================================ */
+.contact {
+    padding: 150px 100px 100px;
+}
+
+.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact__info {
+    padding-right: 40px;
+}
+
+.contact__info h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact__info > p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact__details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact__item i {
+    font-size: 1.5rem;
+    color: #34c759;
+}
+
+.contact__item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.contact__item p {
+    color: #666;
+}
+
+.contact__form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact__form-group {
+    margin-bottom: 20px;
+}
+
+.contact__form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contact__form-group input,
+.contact__form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.contact__form-group input:focus,
+.contact__form-group textarea:focus {
+    border-color: #34c759;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 199, 89, 0.1);
+}
+
+.contact__button {
+    width: 100%;
+    padding: 15px;
+    background-color: #34c759;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact__button:hover {
+    background-color: #2ba44c;
+    transform: translateY(-2px);
+}
+
+/* ================================ */
+/* 13. Blog Page */
+/* ================================ */
+.blog {
+    padding: 150px 100px 100px;
+}
+
+.blog__header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.blog__header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.blog__header p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.blog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog__card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog__card:hover {
+    transform: translateY(-10px);
+}
+
+.blog__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog__content {
+    padding: 30px;
+}
+
+.blog__date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.blog__content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.blog__content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.blog__link {
+    color: #34c759;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: gap 0.3s ease;
+}
+
+.blog__link:hover {
+    gap: 15px;
+}
+
+/* ================================ */
+/* 14. Responsive Design Updates */
+/* ================================ */
+@media (max-width: 1200px) {
+    .contact, .blog {
+        padding: 120px 50px 80px;
+    }
+    
+    .about__content {
+        padding: 60px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact__container {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact__info {
+        padding-right: 0;
+    }
+    
+    .about__hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .blog__grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about__values-grid {
+        grid-template-columns: 1fr;
+    }
+}
